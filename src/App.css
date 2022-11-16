@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+
+
+button{
+    min-width: 50px;
+    border-radius: 5px;
+    background-color: rgb(206, 205, 255);    
+    height: auto;
+    cursor: pointer;   
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 2px 5px;
+}
+button:hover{
+    box-shadow:inset 0px 0px 5px rgb(77, 69, 69);
+    background-color: beige;    
+    transform: translate(0, -2px);
+    transition: 0.3s;
+    color: rgb(226, 12, 12);
+}
+.App > div{
+    width: 300px;
+    height: 800px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow:inset 0px 0px 5px rgb(77, 69, 69);
+    background-color: antiquewhite;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.App  input{
+    width: 250px;
+    height: 20px;
+    margin-top: 10px;
+    border: 1px solid black;
+    box-shadow:inset 0px 0px 5px rgb(77, 69, 69);
+    color: rgb(89, 12, 160);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+.App > div > .me{
+    background-color: darkred;
+    word-wrap: break-word;
+    width: 230px;
+    margin-right: -28px;
+    display: inline-block;
+    text-align: right;
+    padding: 5px;
+    border-radius: 15px 15px 0 15px;
+    
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App > div > .you{
+    background-color: rgb(0, 139, 81);
+    word-wrap: break-word;
+    width: 230px;
+    margin-left: -28px;
+    display: inline-block;
+    text-align: left;
+    padding: 5px;
+    border-radius: 15px  15px 15px 0;
 }
